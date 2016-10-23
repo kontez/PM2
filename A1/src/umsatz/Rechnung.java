@@ -15,6 +15,10 @@ public class Rechnung {
 		cursor = 0;
 	}
 	
+	public Position[] getPositionen() {
+		return positionen;
+    }
+	
 	public void add(Position p){
 		if (cursor >= positionen.length) {
 			positionen = Arrays.copyOf(positionen, positionen.length + erweiternUm);
